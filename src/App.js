@@ -37,7 +37,6 @@ function App() {
   function next(){
   var data = axios(`https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=29991388ae6bfb453c63b60471ac0e68`)
     data.then(function(crt){
-      if(country === input){
       console.log(crt.data)
       setCountry(crt.data.name)
       setcity(crt.data.wind.deg)
@@ -48,7 +47,6 @@ function App() {
       setlong(crt.data.coord.lon)
       setIcon(crt.data.weather[0].icon)
       console.log(icon)
-      }
     })
   }
   return (
