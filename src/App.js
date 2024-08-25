@@ -50,14 +50,14 @@ function App() {
     })
   }
   return (
-    <div className="bg-slate-50 flex justify-center items-center flex-col text-center ">
-      <div className="bg-purple-300 w-98 h-full m-4 px-3 py-5 rounded-md flex justify-center items-center flex-col p-2">
+    <div className="bg-white flex justify-center items-center flex-col text-center ">
+      <div className="bg-slate-50 w-98 h-full m-4 px-3 py-5 rounded-md flex justify-center items-center flex-col p-2">
         <div>
           <h1 className="font-bold ">Weather Report</h1>
           <p className="font-thin">I can give you a weather report about your city!</p>
         </div>
         <div className='w-28 h-28 m-2 p-2'>
-          <img src={weatherimg[icon]} alt='img' className=''></img>
+          <img src={weatherimg[icon]} alt='img'></img>
           <p>{city}°C</p>
 
         </div>
